@@ -10,7 +10,7 @@ jobs:
 
         # Install .NET SDK
         - name: Setup .NET Core
-          uses: https://dot.net/v1/dotnet-install.sh
+          uses: dotnet/install-scripts/src/dotnet-install.sh
           with:
             dotnet-version: 5.0
 
