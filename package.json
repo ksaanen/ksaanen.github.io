@@ -4,9 +4,7 @@
   "description": "portfolio template",
   "main": "ksaanen.github.io",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start:sass": "node-sass -w ./src/datepicker.component.scss -o ./dist/",
-    "build:sass": "node-sass ./src/datepicker.component.scss -o ./dist/ --output-style compressed"
+    "node-sass": "node-sass"
   },
   "repository": {
     "type": "git",
