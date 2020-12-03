@@ -1,0 +1,21 @@
+@namespace Components
+
+<div class="skill-bar">
+    <div class="skill-bar--heading">
+        <strong>@Heading</strong>
+    </div>
+    <div class="skill-bar--bar">
+        <div class="skill-bar--fill" style="width: @PercentageString()"></div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string Heading { get; set; }
+    [Parameter]
+    public int Percentage { get; set; }
+
+    private string PercentageString() {
+        return $"{Percentage}%";
+    }
+}

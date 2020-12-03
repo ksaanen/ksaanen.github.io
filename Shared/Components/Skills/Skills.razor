@@ -1,0 +1,24 @@
+@namespace Components
+
+@for (int i = 0; i < SkillArray.Length; i++)
+{
+    <div class="my-3">
+        <SkillBar Heading="@SkillArray[i].Heading" Percentage="@SkillArray[i].Percentage" />
+    </div>
+}
+
+@code {
+    private Skill[] SkillArray = new Skill[]{
+        new Skill{Heading = "Skill 1", Percentage = 100},
+        new Skill{Heading = "Skill 2", Percentage = 90},
+        new Skill{Heading = "Skill 3", Percentage = 80},
+        new Skill{Heading = "Skill 4", Percentage = 70},
+        new Skill{Heading = "Skill 5", Percentage = 60},
+        new Skill{Heading = "Skill 6", Percentage = 50}
+    };
+
+    private class Skill {
+        public string Heading {get; set;}
+        public int Percentage {get; set;}
+    }
+}

@@ -1,4 +1,5 @@
 @inherits LayoutComponentBase
+@using Components
 
 <div class="page container-fluid">
     <div class="row">
@@ -6,8 +7,10 @@
             
         </aside>
         <main class="col-7 py-5">
-            <NavMenu />
+            
             @Body
         </main>
     </div>
 </div>
+
+<NavMenu />
