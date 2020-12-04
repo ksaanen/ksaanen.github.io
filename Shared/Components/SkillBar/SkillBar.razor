@@ -5,7 +5,7 @@
         <strong>@Heading</strong>
     </div>
     <div class="skill-bar--bar">
-        <div class="skill-bar--fill" style="width: @PercentageString()"></div>
+        <div class="skill-bar--fill" style="max-width: @PercentageString; animation-delay: @(AnimationDelay)ms"></div>
     </div>
 </div>
 
@@ -14,8 +14,21 @@
     public string Heading { get; set; }
     [Parameter]
     public int Percentage { get; set; }
+    [Parameter]
+    public int AnimationDelay {
+        get {
+            return _animationDelay;
+        }
+        set {
+            _animationDelay = value;
+        }
+    }
 
-    private string PercentageString() {
-        return $"{Percentage}%";
+    private int _animationDelay = 0;
+
+    private string PercentageString {
+        get {
+            return $"{Percentage}%";
+        }
     }
 }
