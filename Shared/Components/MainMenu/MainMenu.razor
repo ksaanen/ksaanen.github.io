@@ -1,0 +1,30 @@
+@namespace Components
+
+@if (state) {
+  <div class="container-fluid menu">
+    <div class="row">
+      <div class="col-6">links</div>
+      <div class="col-6">rechts</div>
+    </div>
+  </div>
+}
+
+<div class="open-close-icon @stateClass" @onclick="toggleState">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+@code {
+  private bool state = false;
+
+  private string stateClass {
+    get {
+      return state ? "open" : string.Empty;
+    }
+  }
+
+  private void toggleState() {
+    state = !state;
+  }
+}
