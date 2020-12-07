@@ -3,18 +3,23 @@
 @if (state) {
   <div class="container-fluid main-menu">
     <div class="row">
-      <div class="col-6 main-menu--left">
+      <div class="col-6 p-4 p-xl-5 main-menu--left">
 
-        <h3>Contact me</h3>
+        <h3>Contact</h3>
         <p>email: <a href="mailto:name@email-address.com" target="_blank">name@email-address.com</a><br />
         phone: +31 (0) 6 12 34 56 78</p>
 
         <div>
-          <a href="https://github.com/ksaanen" target="_blank"><img height="22" src="/assets/github.svg" alt="github" /></a>
-          <a href="#" target="_blank"><img height="22" src="/assets/linkedin.svg" alt="linkedin" /></a>
+          <a href="https://github.com/ksaanen" target="_blank"><img height="22" src="/assets/icons/github.svg" alt="github" /></a>
+          <a href="#" target="_blank"><img height="22" src="/assets/icons/linkedin.svg" alt="linkedin" /></a>
         </div>
       </div>
-      <div class="col-6 main-menu--right">rechts</div>
+      <div class="col-6 p-4 p-xl-5 main-menu--right">
+        <NavLink class="text-white" @onclick="toggleState" href="" Match="NavLinkMatch.All"><h3>Home</h3></NavLink>
+        <NavLink class="text-white" @onclick="toggleState" href="about"><h3>About</h3></NavLink>
+        <NavLink class="text-white" @onclick="toggleState" href="projects"><h3>Projects</h3></NavLink>
+        <NavLink class="text-white" @onclick="toggleState" href="resume"><h3>Resume</h3></NavLink>
+      </div>
     </div>
   </div>
 }
