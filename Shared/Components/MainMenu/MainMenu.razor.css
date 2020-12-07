@@ -1,9 +1,18 @@
-.menu {
+.main-menu {
   position: fixed;
   top:0;
   left: 0;
   height: 100vh;
-  background: rgba(0,0,0,.5)
+  background: rgba(0,0,0,.8)
+}
+
+.main-menu--left,
+.main-menu--right {
+  height: 100vh;
+}
+
+.main-menu--left {
+  background-color: white;
 }
 
 .open-close-icon {

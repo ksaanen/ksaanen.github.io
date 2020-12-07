@@ -1,10 +1,20 @@
 @namespace Components
 
 @if (state) {
-  <div class="container-fluid menu">
+  <div class="container-fluid main-menu">
     <div class="row">
-      <div class="col-6">links</div>
-      <div class="col-6">rechts</div>
+      <div class="col-6 main-menu--left">
+
+        <h3>Contact me</h3>
+        <p>email: <a href="mailto:name@email-address.com" target="_blank">name@email-address.com</a><br />
+        phone: +31 (0) 6 12 34 56 78</p>
+
+        <div>
+          <a href="https://github.com/ksaanen" target="_blank"><img height="22" src="/assets/github.svg" alt="github" /></a>
+          <a href="#" target="_blank"><img height="22" src="/assets/linkedin.svg" alt="linkedin" /></a>
+        </div>
+      </div>
+      <div class="col-6 main-menu--right">rechts</div>
     </div>
   </div>
 }
