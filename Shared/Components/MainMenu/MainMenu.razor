@@ -1,24 +1,28 @@
 @namespace Components
 
 @if (state) {
-  <div class="container-fluid main-menu">
-    <div class="row">
-      <div class="col-6 p-4 p-xl-5 main-menu--left">
+  <div class="main-menu">
+    <div class="container">
+      <div class="row py-5 justify-content-between flex-column-reverse flex-md-row">
+        <div class="col-md-5">
 
-        <h3>Contact</h3>
-        <p>email: <a href="mailto:name@email-address.com" target="_blank">name@email-address.com</a><br />
-        phone: +31 (0) 6 12 34 56 78</p>
+          <p>Pellentesque maximus sapien sed mi feugiat aliquam. Nullam tortor lacus, suscipit ac mauris quis, facilisis laoreet nisl. Cras eros lectus, ultrices molestie lacus et, sodales rutrum nisi. Phasellus id augue nec nisi volutpat aliquam. Nam eget aliquet turpis. Sed dolor metus, tincidunt sed volutpat maximus, finibus cursus lacus. Proin at felis tortor. Nunc mauris ante, ultrices sed dignissim sit amet, rutrum sed nunc. Pellentesque quis dui sed mi consectetur iaculis.</p>
 
-        <div>
-          <a href="https://github.com/ksaanen" target="_blank"><img height="22" src="/assets/icons/github.svg" alt="github" /></a>
-          <a href="#" target="_blank"><img height="22" src="/assets/icons/linkedin.svg" alt="linkedin" /></a>
+          <h3>Contact</h3>
+          <p>email: <a href="mailto:name@email-address.com" target="_blank">name@email-address.com</a><br />
+          phone: +31 (0) 6 12 34 56 78</p>
+
+          <div>
+            <a href="https://github.com/ksaanen" target="_blank"><img height="22" src="/assets/icons/github.svg" alt="github" /></a>
+            <a href="#" target="_blank"><img height="22" src="/assets/icons/linkedin.svg" alt="linkedin" /></a>
+          </div>
         </div>
-      </div>
-      <div class="col-6 p-4 p-xl-5 main-menu--right">
-        <NavLink class="text-white" @onclick="toggleState" href="" Match="NavLinkMatch.All"><h3>Home</h3></NavLink>
-        <NavLink class="text-white" @onclick="toggleState" href="about"><h3>About</h3></NavLink>
-        <NavLink class="text-white" @onclick="toggleState" href="projects"><h3>Projects</h3></NavLink>
-        <NavLink class="text-white" @onclick="toggleState" href="resume"><h3>Resume</h3></NavLink>
+        <div class="col-md-6 align-self-end text-center text-md-right">
+          <NavLink class="nav-link" @onclick="toggleState" href="" Match="NavLinkMatch.All"><h3>Home</h3></NavLink>
+          <NavLink class="nav-link" @onclick="toggleState" href="about"><h3>About</h3></NavLink>
+          <NavLink class="nav-link" @onclick="toggleState" href="projects"><h3>Projects</h3></NavLink>
+          <NavLink class="nav-link" @onclick="toggleState" href="resume"><h3>Resume</h3></NavLink>
+        </div>
       </div>
     </div>
   </div>
