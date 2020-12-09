@@ -1,0 +1,26 @@
+{
+  "name": "ksaanen.github.io",
+  "version": "0.0.1",
+  "description": "portfolio template",
+  "main": "ksaanen.github.io",
+  "scripts": {
+    "node-sass": "node-sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksaanen/ksaanen.github.io.git"
+  },
+  "keywords": [
+    "blazor",
+    "sass"
+  ],
+  "author": "Kevin Saanen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ksaanen/ksaanen.github.io/issues"
+  },
+  "homepage": "https://github.com/ksaanen/ksaanen.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
