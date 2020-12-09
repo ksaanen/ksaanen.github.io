@@ -3,7 +3,20 @@
   top:0;
   left: 0;
   height: 100vh;
-  background: rgba(0,0,0,.8)
+  background: rgba(0,0,0,.8);
+  opacity:0;
+
+  animation: fadeIn ease-in-out 500ms;
+  -webkit-animation: fadeIn ease-in-out 500ms;
+  -moz-animation: fadeIn ease-in-out 500ms;
+  -o-animation: fadeIn ease-in-out 500ms;
+  -ms-animation: fadeIn ease-in-out 500ms;
+  
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
 }
 
 .main-menu--left,
@@ -110,4 +123,29 @@
   transform: rotate(-45deg);
   top: 39px;
   left: 8px;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
