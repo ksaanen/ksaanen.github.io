@@ -4,7 +4,10 @@
   "description": "portfolio template",
   "main": "ksaanen.github.io",
   "scripts": {
-    "node-sass": "node-sass"
+    "node-sass": "node-sass",
+    "sass:watch": "node-sass --watch ./Shared --output ./Shared",
+    "sass:compile": "node-sass --recursive ./Shared --output ./Shared",
+    "start:sass": "npm run sass:compile && npm run sass:watch"
   },
   "repository": {
     "type": "git",
