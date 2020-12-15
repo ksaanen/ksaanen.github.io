@@ -6,8 +6,8 @@
   "scripts": {
     "sass": "sass",
     "sass:root": "sass ./wwwroot/css/style.scss ./wwwroot/css/style.css",
-    "sass:watch": "sass ./wwwroot/css",
-    "sass:build": "sass --no-source-map ./wwwroot/css/style.scss ./wwwroot/css/style.css"
+    "sass:build": "sass --no-source-map ./wwwroot/css && sass --no-source-map ./Shared",
+    "start": "sass --watch ./Shared"
   },
   "repository": {
     "type": "git",
