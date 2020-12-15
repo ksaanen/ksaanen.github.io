@@ -4,10 +4,10 @@
   "description": "portfolio template",
   "main": "ksaanen.github.io",
   "scripts": {
-    "node-sass": "node-sass",
-    "sass:watch": "node-sass --watch ./Shared --output ./Shared",
-    "sass:compile": "node-sass --recursive ./Shared --output ./Shared",
-    "start:sass": "npm run sass:compile && npm run sass:watch"
+    "sass": "sass",
+    "sass:root": "sass ./wwwroot/css/style.scss ./wwwroot/css/style.css",
+    "sass:watch": "sass ./wwwroot/css",
+    "sass:build": "sass --no-source-map ./wwwroot/css/style.scss ./wwwroot/css/style.css"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/ksaanen/ksaanen.github.io#readme",
   "devDependencies": {
-    "node-sass": "^5.0.0"
+    "bootstrap": "^5.0.0-beta1",
+    "sass": "^1.30.0"
   }
 }

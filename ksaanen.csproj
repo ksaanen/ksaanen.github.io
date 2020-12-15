@@ -25,7 +25,8 @@
 
   <Target Name="CompileSass" BeforeTargets="Compile">    
     <Message Text="All the SCSS Files: @(ScssFiles->'%(filename).css')" Importance="high" />
-    <Exec Command="npm run node-sass -- %(ScssFiles.Identity) %(relativedir)%(filename).css" />
+    <Exec Command="npm run sass:root" />
+    <Exec Command="npm run sass -- %(ScssFiles.Identity) %(relativedir)%(filename).css" />
   </Target>
 
 </Project>
