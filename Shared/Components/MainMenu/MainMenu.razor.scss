@@ -18,6 +18,10 @@
   -moz-animation-fill-mode: forwards;
   -o-animation-fill-mode: forwards;
   -ms-animation-fill-mode: forwards;
+
+  & > .container {
+    position: relative;
+  }
 }
 
 @media (min-width: 768px) { 
