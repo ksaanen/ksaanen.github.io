@@ -19,9 +19,10 @@
   -o-animation-fill-mode: forwards;
   -ms-animation-fill-mode: forwards;
 
-  & > .container {
-    position: relative;
-  }
+  
+}
+.main-menu > .container {
+  position: relative;
 }
 
 @media (min-width: 768px) { 

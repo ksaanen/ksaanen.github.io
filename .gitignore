@@ -2,5 +2,3 @@ bin
 obj
 node_modules
 .DS_Store
-*.razor.css
-*.razor.css.map
