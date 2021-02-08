@@ -1,0 +1,193 @@
+/* /Shared/Components/MainMenu/MainMenu.razor.rz.scp.css */
+.main-menu[b-zkt1v7arkd] {
+  position: fixed;
+  top:0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: white;
+  opacity:0;
+
+  animation: fadeIn-b-zkt1v7arkd ease-in-out 500ms;
+  -webkit-animation: fadeIn ease-in-out 500ms;
+  -moz-animation: fadeIn ease-in-out 500ms;
+  -o-animation: fadeIn ease-in-out 500ms;
+  -ms-animation: fadeIn ease-in-out 500ms;
+
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+
+  
+}
+.main-menu > .container[b-zkt1v7arkd] {
+  position: relative;
+}
+
+@media (min-width: 768px) { 
+  .main-menu[b-zkt1v7arkd] {
+    background: rgba(0,0,0,.8);
+  }
+  .main-menu[b-zkt1v7arkd]:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top:0; left:0;
+    background: white;
+    width: 50%;
+    height: 100vh;
+    width: 50vw;
+  }
+  .nav-link[b-zkt1v7arkd],
+  .nav-link h3[b-zkt1v7arkd] {
+    color: white !important;
+  }
+}
+
+.main-menu--right a[b-zkt1v7arkd],
+.main-menu--right .btn-link[b-zkt1v7arkd] {
+  color: white;
+}
+
+.open-close-icon[b-zkt1v7arkd] {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #DEDEDE;
+  background: white;
+
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.open-close-icon span[b-zkt1v7arkd] {
+  display: block;
+  position: relative;
+  height: 8px;
+  border-radius: 2px;
+  width: 100%;
+  background: rgb(32,178,170);
+  opacity: 1;
+
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+
+  -webkit-transition-origin: center center;
+  -moz-transition-origin: center center;
+  -o-transition-origin: center center;
+  transform-origin: center center;
+}
+
+.open-close-icon.open span:nth-child(1)[b-zkt1v7arkd] {
+  -webkit-transform: translateY(15px) rotate(45deg);
+  -moz-transform: translateY(15px) rotate(45deg);
+  -o-transform: translateY(15px) rotate(45deg);
+  transform: translateY(15px) rotate(45deg);
+}
+
+.open-close-icon.open span:nth-child(2)[b-zkt1v7arkd] {
+  width: 0%;
+  opacity: 0;
+}
+
+.open-close-icon.open span:nth-child(3)[b-zkt1v7arkd] {
+  -webkit-transform: translateY(-15px) rotate(-45deg);
+  -moz-transform: translateY(-15px) rotate(-45deg);
+  -o-transform: translateY(-15px) rotate(-45deg);
+  transform: translateY(-15px) rotate(-45deg);
+}
+
+@keyframes fadeIn-b-zkt1v7arkd {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+/* /Shared/Components/NavMenu/NavMenu.razor.rz.scp.css */
+
+nav h3[b-tb7v0henud] {
+  display: inline;
+  color: black;
+}
+
+a:hover[b-tb7v0henud] { 
+  text-decoration: none;
+}
+/* /Shared/Components/SkillBar/SkillBar.razor.rz.scp.css */
+.skill-bar--bar[b-jwu0mmhkps] {
+  border-radius: 3px;
+  max-width: 400px;
+  background: rgba(0,0,0,.1);
+  overflow: hidden;
+  -moz-box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+  box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+}
+
+.skill-bar--heading[b-jwu0mmhkps] {
+  font-family: 'Castoro', Courier, monospace;
+  font-size: 1.2em;
+}
+
+.skill-bar--fill[b-jwu0mmhkps] {
+  background-color: rgb(32,178,170);
+  height: 20px;
+  width: 0;
+
+  -moz-box-shadow: 0 0 3px 2px rgba(0,0,0,.2);
+  -webkit-box-shadow: 0 0 3px 2px rgba(129, 81, 81, 0.2);
+  box-shadow: 0 0 3px 2px rgba(0,0,0,.2);
+  
+  animation-name: fillAnimation-b-jwu0mmhkps;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fillAnimation-b-jwu0mmhkps {
+  from {width: 0}
+  to {width: 100%;}
+}
+/* /Shared/MainLayout.razor.rz.scp.css */
